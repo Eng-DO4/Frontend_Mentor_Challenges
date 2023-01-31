@@ -28,5 +28,17 @@
       </a>
     </div>
   </div>
+  <script>
+    const product_img = document.querySelector('.product-image img')
+    let media = window.matchMedia("(max-width: 700px)")
+    product_img.src = media.matches 
+    ? 'images/image-product-mobile.jpg' 
+    : 'images/image-product-desktop.jpg';
+    media.onchange = _ => {
+      product_img.src = media.matches 
+      ? 'images/image-product-mobile.jpg' 
+      : 'images/image-product-desktop.jpg';
+    }
+  </script>
 </body>
 </html>

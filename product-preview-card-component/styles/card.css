@@ -96,3 +96,14 @@ body {
 .product-info a.add-to-cart:hover {
     background-color: #1a4031;
 }
+
+@media (min-width: 701px) {
+    .card {
+        display: flex;
+        max-height: 440px;
+        max-width: 675px;
+    }
+    .product-image img {
+        height: 100%;
+    }
+}
